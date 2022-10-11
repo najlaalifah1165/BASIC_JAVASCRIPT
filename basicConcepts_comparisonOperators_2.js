@@ -1,4 +1,5 @@
-function main() {
-    var age = parseInt(readLine(), 10)
-    console.log(age >=18)
-}
+var age = 15;
+console.log(age>=15);
+
+var age = 18;
+console.log(age>=18);

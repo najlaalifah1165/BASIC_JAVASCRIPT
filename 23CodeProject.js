@@ -8,7 +8,7 @@ function main() {
         if (climb >= depth) {
             break;
         }
-        climb -= 2;
+        climb -= 2
     }
-    console.log("day");
+    console.log(day)
 }
