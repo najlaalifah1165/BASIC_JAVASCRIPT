@@ -1,0 +1,74 @@
+<script>
+// lesson 37.1
+    /*
+    var courses = new Array("menjahit", "berenang" ,"memasak")
+    
+    courses[1] = "menyanyi"
+    document.write(courses[1])
+    */
+
+
+// lesson 38.1
+/*
+    var courses = new Array(3)
+    courses[0] = "menjahit"
+    courses[1] = "berenang"
+    courses[2] = "mamasak"
+    courses[3] = "belajar"
+
+    document.write(courses[2])
+    
+    // cara ke 2
+   var courses = ["menjahit", "berenang", "memasak", "belajar"]
+   document.write(courses[3])*/
+
+// lesson 39.1
+/*
+    var menu = [" ayam", " mie goreng", " bakso", " nasi goreng"]
+    var courses = ["menjahit", " berenang", " memasak", " belajar"]
+    var concatArray = courses.concat(menu)
+    document.write(concatArray)
+    */
+
+// lesson 40.1
+/*
+    function person1(name, age)
+        this.name = name
+        this.age = age
+        */
+/*
+        var person = {
+            name: " Jaa ",
+            age: 17,
+        }
+   var person2 = []
+   var a = person["name"] = " Jaa "
+   var b = person["age"] = 17
+//    var c = new person1("Jaa", 17)
+   document.write(a)
+   document.write(b)
+   document.write(person["name"])
+   document.write(person["age"])
+   */ 
+
+// lesson 41.1
+    // document.write(Math.PI);
+    // document.write(Math.sqrt(81))
+
+    /*
+    var random = Math.ceil(Math.random()*10)
+    document.write(random)
+    */
+
+    function main() {
+    var year = 2005
+    
+    document.write(calcCent(year));
+    
+}
+
+function calcCent(y){
+    return Math.ceil(y/100)
+}
+main()
+</script>
