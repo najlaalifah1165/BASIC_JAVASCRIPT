@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: aqua;
+            padding: 20px;
+            border-style: double;
+            border-radius: 10%;
+        }
+        button:hover {
+            background-color: rgb(80, 255, 57);
+            padding: 23px;
+        }
+        .text {
+            background-color: aquamarine;
+            border-style: double;
+        }
+    </style>
+</head>
+<body>
+    <div id = "demo">
+    <fieldset>
+    <center>
+        <button onclick="show()"><h3>Click Me:)</h3></button>
+        <button id="date"><h3>Click Me:)</h3></button>
+        <br>
+        <hr>
+        <input class="text" type="text" id="name" onchange="change()" placeholder="name...">
+    </center>
+    </div>
+    <script>
+        function show() {
+            alert('WELCOME!')
+        }
+        window.onload = function() {
+        var x = document.getElementById('date');
+        x.onclick = function () {
+            var z = document.getElementById('demo')
+            z.innerHTML = Date()
+    }
+};
+        function change() {
+            var y = document.getElementById('name');
+            y.value = y.value.toUpperCase();
+        }
+    </script>
+    </fieldset>
+</body>
+</html>

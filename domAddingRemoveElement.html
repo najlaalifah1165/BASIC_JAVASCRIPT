@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos non quasi nobis, iure pariatur eum reiciendis aperiam enim veritatis quis, dolorum obcaecati rerum inventore nostrum deleniti! Placeat incidunt odio repellat.</div>
+    <script>
+        //calling the function in window.onload to make sure the HTML is loaded
+window.onload = function() {
+    //creating a new paragraph
+    var p = document.createElement("p");
+    var p = document.createElement ("h2")
+    var node = document.createTextNode("Ajaa");
+    //adding the text to the paragraph
+    p.appendChild(node);
+
+    var div = document.getElementById("demo");
+    //adding the paragraph to the div
+    div.appendChild(p);
+};
+    </script>
+</body>
+</html>

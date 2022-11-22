@@ -60,6 +60,7 @@
     document.write(random)
     */
 
+    /*
     function main() {
     var year = 2005
     
@@ -71,4 +72,73 @@ function calcCent(y){
     return Math.ceil(y/100)
 }
 main()
+*/
+
+/*
+    var n = prompt('masukan bilangan : ', '')
+    var answer = Math.sqrt(n);
+    alert ('nilai dari akar kuadrat bilangan ' + n + 'adalah ' + answer)
+
+
+// menghitung volume tabung
+    var r = prompt('masukan nilai jari-jari :', '')
+    var t = prompt('masukan nilai tinggi :', '')
+    var answer = (Math.PI+(Math.pow(r,2)*t))
+    alert('jari-jari '+ r + ', tinggi ' + t + ', volume tabung = ' +answer)
+ */    
+
+
+// lesson 42.1
+/*
+function myAlert(){
+    alert('Hello Najla')
+}
+setInterval(myAlert, 2000)
+*/ 
+
+// lesson 43.1
+/*
+function myTime() {
+    var d = new Date()
+    var hours = d.getHours();
+    var minutes = d.getMinutes();
+    var seconds = d.getSeconds();
+    document.body.innerHTML = '<h1>' + hours + ':' + minutes + ':' + seconds
+}
+setInterval(myTime, 1000)
+*/ 
+
+
+function birthOfCanal(year, month, day) {
+    var namaHari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
+    var d = new Date(year, month, day)
+    var day = d.getDay();
+    return namaHari[day];
+}
+var y = prompt('Masukan tahun lahir kamu')
+var n = prompt('Masukan bulan lahir kamu')
+var d = prompt('Masukan tanggal lahir kamu')
+var dDay = birthOfCanal(y,(n-1),5)
+console.log(dDay)
+alert('Hari lahir anda adalah hari ' + dDay)
+
+
+/*
+function main() {
+   var year = 2005;
+   var month = 0;
+   var day = 16;
+    
+   document.write(getWeekDay(year, month, day)); 
+}
+
+function getWeekDay(year, month, day) {
+   var names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+   var date = new Date(year, month, day);
+    //complete the function
+    var day = date.getDay()
+    return names[day]
+}
+main()
+*/
 </script>
